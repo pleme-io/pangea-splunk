@@ -12,10 +12,10 @@ module Pangea::Resources
 
     define_resource :splunk_apps_local,
       attributes_class: Splunk::Types::AppsLocalAttributes,
-      outputs: { id: :id, name: :name, version: :version },
+      outputs: { id: :id },
       map: [:name],
-      map_present: [:auth, :explicit_appname, :label],
-      map_bool: [:filename, :update, :visible]
+      map_present: [:acl, :auth, :author, :description, :explicit_appname, :label, :session, :version],
+      map_bool: [:configured, :filename, :update, :visible]
   end
   module Splunk
     include SplunkAppsLocal

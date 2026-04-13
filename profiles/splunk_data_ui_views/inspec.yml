@@ -1,0 +1,8 @@
+name: splunk_data_ui_views
+title: Manages a splunk_data_ui_views resource
+version: 0.1.0
+supports:
+  - platform: splunk
+depends:
+  - name: inspec-splunk
+    url: https://github.com/pleme-io/inspec-splunk

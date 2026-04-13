@@ -4,10 +4,32 @@
 module Pangea
   module Resources
     module Splunk
-      include SplunkInputsHttpEventCollector
-      include SplunkIndexes
-      include SplunkSavedSearches
+      include SplunkAdminSamlGroups
       include SplunkAppsLocal
+      include SplunkAuthenticationUsers
+      include SplunkAuthorizationRoles
+      include SplunkConfigsConf
+      include SplunkDataUiViews
+      include SplunkGenericAcl
+      include SplunkGlobalHttpEventCollector
+      include SplunkIndexes
+      include SplunkInputsHttpEventCollector
+      include SplunkInputsMonitor
+      include SplunkInputsScript
+      include SplunkInputsTcpCooked
+      include SplunkInputsTcpRaw
+      include SplunkInputsTcpSplunkTcpToken
+      include SplunkInputsTcpSsl
+      include SplunkInputsUdp
+      include SplunkLookupDefinition
+      include SplunkLookupTableFile
+      include SplunkOutputsTcpDefault
+      include SplunkOutputsTcpGroup
+      include SplunkOutputsTcpServer
+      include SplunkOutputsTcpSyslog
+      include SplunkSavedEventTypes
+      include SplunkSavedSearches
+      include SplunkShIndexesManager
     end
   end
 end

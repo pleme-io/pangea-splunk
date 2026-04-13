@@ -1,0 +1,8 @@
+name: splunk_lookup_definition
+title: Manages a splunk_lookup_definition resource
+version: 0.1.0
+supports:
+  - platform: splunk
+depends:
+  - name: inspec-splunk
+    url: https://github.com/pleme-io/inspec-splunk

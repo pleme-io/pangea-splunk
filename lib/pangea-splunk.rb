@@ -4,14 +4,35 @@
 require 'pangea-core'
 require 'terraform-synthesizer'
 
-# Splunk types
-require_relative 'pangea/types/splunk_types'
+module Pangea; module Resources; module Splunk; module Types; end; end; end; end
 
 # Splunk resources
-require_relative 'pangea/resources/splunk_inputs_http_event_collector/resource'
-require_relative 'pangea/resources/splunk_indexes/resource'
-require_relative 'pangea/resources/splunk_saved_searches/resource'
+require_relative 'pangea/resources/splunk_admin_saml_groups/resource'
 require_relative 'pangea/resources/splunk_apps_local/resource'
+require_relative 'pangea/resources/splunk_authentication_users/resource'
+require_relative 'pangea/resources/splunk_authorization_roles/resource'
+require_relative 'pangea/resources/splunk_configs_conf/resource'
+require_relative 'pangea/resources/splunk_data_ui_views/resource'
+require_relative 'pangea/resources/splunk_generic_acl/resource'
+require_relative 'pangea/resources/splunk_global_http_event_collector/resource'
+require_relative 'pangea/resources/splunk_indexes/resource'
+require_relative 'pangea/resources/splunk_inputs_http_event_collector/resource'
+require_relative 'pangea/resources/splunk_inputs_monitor/resource'
+require_relative 'pangea/resources/splunk_inputs_script/resource'
+require_relative 'pangea/resources/splunk_inputs_tcp_cooked/resource'
+require_relative 'pangea/resources/splunk_inputs_tcp_raw/resource'
+require_relative 'pangea/resources/splunk_inputs_tcp_splunk_tcp_token/resource'
+require_relative 'pangea/resources/splunk_inputs_tcp_ssl/resource'
+require_relative 'pangea/resources/splunk_inputs_udp/resource'
+require_relative 'pangea/resources/splunk_lookup_definition/resource'
+require_relative 'pangea/resources/splunk_lookup_table_file/resource'
+require_relative 'pangea/resources/splunk_outputs_tcp_default/resource'
+require_relative 'pangea/resources/splunk_outputs_tcp_group/resource'
+require_relative 'pangea/resources/splunk_outputs_tcp_server/resource'
+require_relative 'pangea/resources/splunk_outputs_tcp_syslog/resource'
+require_relative 'pangea/resources/splunk_saved_event_types/resource'
+require_relative 'pangea/resources/splunk_saved_searches/resource'
+require_relative 'pangea/resources/splunk_sh_indexes_manager/resource'
 
 # Splunk module aggregator
 require_relative 'pangea/resources/splunk'

@@ -12,10 +12,10 @@ module Pangea::Resources
 
     define_resource :splunk_indexes,
       attributes_class: Splunk::Types::IndexesAttributes,
-      outputs: { id: :id, name: :name },
+      outputs: { id: :id },
       map: [:name],
-      map_present: [:cold_path, :cold_to_frozen_dir, :datatype, :frozen_time_period_in_secs, :home_path, :max_data_size_mb, :max_total_data_size_mb, :max_warm_db_count, :thawed_path],
-      map_bool: []
+      map_present: [:acl, :block_sign_size, :bucket_rebuild_memory_hint, :cold_path, :cold_to_frozen_dir, :cold_to_frozen_script, :datatype, :frozen_time_period_in_secs, :home_path, :max_bloom_backfill_bucket_age, :max_concurrent_optimizes, :max_data_size, :max_hot_buckets, :max_hot_idle_secs, :max_hot_span_secs, :max_mem_mb, :max_meta_entries, :max_time_unreplicated_no_acks, :max_time_unreplicated_with_acks, :max_total_data_size_mb, :max_warm_db_count, :min_raw_file_sync_secs, :min_stream_group_queue_size, :partial_service_meta_period, :process_tracker_service_interval, :quarantine_future_secs, :quarantine_past_secs, :raw_chunk_size_bytes, :rep_factor, :rotate_period_in_secs, :service_meta_period, :thawed_path, :throttle_check_period, :tstats_home_path, :warm_to_cold_script],
+      map_bool: [:compress_rawdata, :enable_online_bucket_repair, :sync_meta]
   end
   module Splunk
     include SplunkIndexes

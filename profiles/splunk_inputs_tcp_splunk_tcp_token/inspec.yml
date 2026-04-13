@@ -1,0 +1,8 @@
+name: splunk_inputs_tcp_splunk_tcp_token
+title: Manages a splunk_inputs_tcp_splunk_tcp_token resource
+version: 0.1.0
+supports:
+  - platform: splunk
+depends:
+  - name: inspec-splunk
+    url: https://github.com/pleme-io/inspec-splunk

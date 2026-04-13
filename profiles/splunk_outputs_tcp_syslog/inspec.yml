@@ -1,0 +1,8 @@
+name: splunk_outputs_tcp_syslog
+title: Manages a splunk_outputs_tcp_syslog resource
+version: 0.1.0
+supports:
+  - platform: splunk
+depends:
+  - name: inspec-splunk
+    url: https://github.com/pleme-io/inspec-splunk

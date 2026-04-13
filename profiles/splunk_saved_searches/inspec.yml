@@ -1,0 +1,8 @@
+name: splunk_saved_searches
+title: Manages a splunk_saved_searches resource
+version: 0.1.0
+supports:
+  - platform: splunk
+depends:
+  - name: inspec-splunk
+    url: https://github.com/pleme-io/inspec-splunk

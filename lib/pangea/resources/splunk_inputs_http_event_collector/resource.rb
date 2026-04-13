@@ -12,10 +12,10 @@ module Pangea::Resources
 
     define_resource :splunk_inputs_http_event_collector,
       attributes_class: Splunk::Types::InputsHttpEventCollectorAttributes,
-      outputs: { id: :id, name: :name, token: :token },
+      outputs: { id: :id },
       map: [:name],
-      map_present: [:index, :indexes, :source, :sourcetype],
-      map_bool: [:disabled, :use_ack]
+      map_present: [:acl, :host, :index, :indexes, :source, :sourcetype, :token, :use_ack],
+      map_bool: [:disabled]
   end
   module Splunk
     include SplunkInputsHttpEventCollector

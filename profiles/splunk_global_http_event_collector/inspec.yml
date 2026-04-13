@@ -1,0 +1,8 @@
+name: splunk_global_http_event_collector
+title: Manages a splunk_global_http_event_collector resource
+version: 0.1.0
+supports:
+  - platform: splunk
+depends:
+  - name: inspec-splunk
+    url: https://github.com/pleme-io/inspec-splunk
